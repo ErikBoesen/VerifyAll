@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "VerifyAll",
+	"version": "0.0.1",
+	"short_name": "VerifyAll",
+	"description": "Mark everyone on Twitter verified, because it's just as useful",
+	"icons": {
+		"128": "res/icon.png"
+	},
+	"default_locale": "en",
+	"minimum_chrome_version": "36.0",
+    "content_scripts": [{
+        "matches": ["https://twitter.com/*"],
+        "css": ["style.css"],
+        "js": ["scripts.js"],
+        "run_at": "document_end"
+    }],
+	"options_page": "options.html",
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	"permissions": [
+		"storage"
+	]
+}
