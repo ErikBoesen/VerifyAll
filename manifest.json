@@ -7,7 +7,6 @@
 	"icons": {
 		"128": "res/icon.png"
 	},
-	"default_locale": "en",
 	"minimum_chrome_version": "36.0",
     "content_scripts": [{
         "matches": ["https://twitter.com/*"],
