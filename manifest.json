@@ -1,5 +1,5 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "VerifyAll",
 	"version": "0.0.1",
 	"short_name": "VerifyAll",
@@ -7,7 +7,7 @@
 	"icons": {
 		"128": "res/icon.png"
 	},
-	"minimum_chrome_version": "36.0",
+	"minimum_chrome_version": "88.0",
     "content_scripts": [{
         "matches": ["https://twitter.com/*"],
         "css": ["inject.css"],
