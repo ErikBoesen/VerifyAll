@@ -11,8 +11,8 @@
 	"minimum_chrome_version": "36.0",
     "content_scripts": [{
         "matches": ["https://twitter.com/*"],
-        "css": ["style.css"],
-        "js": ["scripts.js"],
+        "css": ["inject.css"],
+        "js": ["inject.js"],
         "run_at": "document_end"
     }],
 	"options_page": "options.html",
